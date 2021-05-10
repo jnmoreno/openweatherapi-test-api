@@ -1,12 +1,19 @@
-# openweatherapi-test-api
+# Ze Delivery Challenge [![Zé Delivery](https://courier-images-web.imgix.net/static/img/logo-white-text.png?auto=compress,format&fit=max&w=86&h=16&dpr=2&fm=png)](https://ze.delivery/)
+## _OpenWeather API Test_
+**This project delivers the automation of some API tests, using the website's APIS https://openweathermap.org/**
+
+## Languages and Frameworks
+This project using the following languages and frameworks:
+
+* [Java 11](https://openjdk.java.net/projects/jdk/11/) as the programming language
+* [JUnit5](https://junit.org/junit5/) as the UnitTest framework to support the test creation
+* [REST-assured](https://www.selenium.dev/) as framework to test REST API
+* [Allure Report](https://docs.qameta.io/allure/) as the testing report strategy
 
 
-## Required software
-- Java JDK 11+
-- Maven installed and in your classpath
 
 ## How to execute the tests
-You can open each test class on src\\test\\java and execute all of them, but I recommend you run it by the command line. It enables us to run in different test execution strategies.
+You can open each test class on `src\test\java` and execute all of them, but I recommend you run it by the command line. It enables us to run in different test execution strategies.
 
 ## Running the test suites
 The test suites can be run directly by your IDE or by command line. If you run mvn test all the tests will execute because it's the regular Maven lifecycle to run all the tests.
@@ -30,21 +37,22 @@ You can use the command line to generate it in two ways:
 
 ## About the Project Structure
 ### src/main/java
-**test**
-Base Test that sets the initial aspects to make the requests using RestAssured. It also has the configuration to deal with BigDecimal returns and SSL configuration.
-
-**provider**
+**Provider**
 JUnit 5 Arguments to reduce the amount of code and maintenance for the functional tests
 
-**suite**
+**Suite**
 It contains a class having the data related to the test groups.
 
-### src/test/java
+* ***Configuration file:*** there are 2 properties files on `src/test/java/resources/`: <br>
+  -- `allure.properties`: path to allure reports<br>
+  -- `datas.properties`: contains contains APIKEY, ID CITY, CITY NAME, ZIP CODE, LATITUDE, LONGITUDE, UNITS and IDIOM
 
-## Libraries
-- [RestAssured] library to test REST APIs
-- JUnit 5 to support the test creation
-- java-faker to generate fake data
-- Allure Report as the testing report strategy
 
-All the parameters, except the -Dgroups are pointing to Heroku because we can't run it locally. It's a great example about how can you set different attribute values to run your tests.
+## Set up the environment
+* Install Java 11
+* Install Maven and configure in your classpath
+* Install Allure
+* Install git
+
+### Clone Project
+Clone the project from github link. Navigate to your workspace folder, at the terminal, type the command: `https://github.com/jnmoreno/openweatherapi-test-api.git`.
