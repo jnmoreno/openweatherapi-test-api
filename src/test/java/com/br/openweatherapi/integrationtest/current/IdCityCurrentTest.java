@@ -17,10 +17,10 @@ import static org.hamcrest.text.IsEqualIgnoringCase.equalToIgnoringCase;
 
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@DisplayName("Create Trip Success Result")
+@DisplayName("Get Current Weather with IDCity Parameter")
 @Tag(TestTags.REGRESSION)
 @Tag(TestTags.CURRENT)
-public class IdCityTest {
+public class IdCityCurrentTest {
     ReaderProperties properties = new ReaderProperties();
     String idCity;
     String apiKey;
@@ -39,7 +39,7 @@ public class IdCityTest {
 
     @Test
     @Order(1)
-    @DisplayName("Create Admin Token")
+    @DisplayName("Get Current Weather by ID City")
     void getCurrentWeatherIdCity() {
         try {
             properties.readFile();

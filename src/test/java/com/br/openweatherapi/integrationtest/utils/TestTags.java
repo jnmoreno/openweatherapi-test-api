@@ -6,6 +6,5 @@ public class TestTags {
     public static final String CURRENT = "current";
     public static final String FORECAST = "forecast";
     public static final String REGRESSION = "regression";
-    public static final String AIRPOLUTION = "airpolution";
 
 }
