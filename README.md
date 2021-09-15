@@ -1,4 +1,3 @@
-# Ze Delivery Challenge [![Zé Delivery](https://courier-images-web.imgix.net/static/img/logo-white-text.png?auto=compress,format&fit=max&w=86&h=16&dpr=2&fm=png)](https://ze.delivery/)
 ## _OpenWeather API Test_
 **This project delivers the automation of some API tests, using the website's APIS https://openweathermap.org/**
 
